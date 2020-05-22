@@ -2,7 +2,7 @@
 <Containers>
   <TemplateURL>https://raw.githubusercontent.com/merp4/unraid-docker-templates/master/templates/SQLServer2019.xml</TemplateURL>
   <Beta>False</Beta>
-  <Category>Tools:,Other:,Network:Other,Network:Web</Category>
+  <Category>Tools:;Other:;Network:Other;Network:Web</Category>
   <Name>Microsoft SQL Server 2019</Name>
   <Description>
     An Unraid template for official MS release on DockerHub.[br]
