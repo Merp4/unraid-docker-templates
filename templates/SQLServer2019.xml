@@ -2,7 +2,7 @@
 <Containers>
   <TemplateURL>https://raw.githubusercontent.com/merp4/unraid-docker-templates/master/templates/SQLServer2019.xml</TemplateURL>
   <Beta>False</Beta>
-  <Category>Tools:;Other:;Network:Other;Network:Web</Category>
+  <Category>Tools: Other: Network:Other Network:Web</Category>
   <Name>Microsoft SQL Server 2019</Name>
   <Description>
     An Unraid template for official MS release on DockerHub.[br]
@@ -77,6 +77,6 @@
     </Volume>
   </Data>
   <WebUI></WebUI>
-  <Icon>https://mcrflowprodcentralus.blob.core.windows.net/defaultlogo/Microsoft_logo.svg?sp=r&st=2019-01-19T00:10:26Z&se=2033-11-04T07:10:26Z&spr=https&sv=2018-03-28&sig=dRn%2BJsqcKwsVdAMcdkzPAbydqSC%2BzBS9BwJUI9AflR4%3D&sr=b</Icon>
+  <Icon>https://mcrflowprodcentralus.blob.core.windows.net/defaultlogo/Microsoft_logo.svg?sp%3Dr%26st%3D2019-01-19T00%3A10%3A26Z%26se%3D2033-11-04T07%3A10%3A26Z%26spr%3Dhttps%26sv%3D2018-03-28%26sig%3DdRn%252BJsqcKwsVdAMcdkzPAbydqSC%252BzBS9BwJUI9AflR4%253D%26sr%3Db</Icon>
   <ExtraParams></ExtraParams>
 </Containers>
