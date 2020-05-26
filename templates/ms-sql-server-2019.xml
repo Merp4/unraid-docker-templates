@@ -15,7 +15,7 @@
   <Support></Support>
   <Registry>https://registry.hub.docker.com/_/microsoft-mssql-server</Registry>
   <GitHub></GitHub>
-  <Repository>https://mcr.microsoft.com/mssql/server:2019-latest</Repository>
+  <Repository>mcr.microsoft.com/mssql/server:2019-latest</Repository>
   <Project></Project>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
