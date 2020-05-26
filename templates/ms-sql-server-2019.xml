@@ -103,7 +103,7 @@
       Type="Variable"
       Name="Language ID (LCID)"
       Target="MSSQL_LCID"
-      Default=""
+      Default="1033"
       Description="Sets the language ID to use for SQL Server. For example 1036 is French. See https://docs.microsoft.com/en-us/sql/linux/sql-server-linux-configure-environment-variables?view=sql-server-ver15&amp;viewFallbackFrom=sql-server-2019."
       Mask="false"
       Display="always"
