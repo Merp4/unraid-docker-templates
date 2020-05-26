@@ -90,7 +90,16 @@
       Mask="false"
       Display="always"
       Required="true">Developer</Config>
-
+  <Config
+      Type="Variable"
+      Name="Enable SQL Server Agent"
+      Target="MSSQL_AGENT_ENABLED"
+      Default="false"
+      Description="Set to true/false to enable/disable SQL Server Agent."
+      Mask="false"
+      Display="always"
+      Required="false">false</Config>
+  
   <Config
       Type="Path"
       Mode="rw"
