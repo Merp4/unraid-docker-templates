@@ -98,7 +98,7 @@
       Description="Set to true/false to enable/disable SQL Server Agent."
       Mask="false"
       Display="always"
-      Required="false">false</Config>
+      Required="false"></Config>
   <Config
       Type="Variable"
       Name="Language ID (LCID)"
