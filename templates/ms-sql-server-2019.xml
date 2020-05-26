@@ -22,31 +22,9 @@
   <Networking>
     <Mode>bridge</Mode>
     <Publish>
-      <Port>
-        <HostPort>1433</HostPort>
-        <ContainerPort>1433</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-      <Port>
-        <HostPort>1434</HostPort>
-        <ContainerPort>1434</ContainerPort>
-        <Protocol>udp</Protocol>
-      </Port>
     </Publish>
   </Networking>
   <Environment>
-    <Variable>
-      <Name>ACCEPT_EULA</Name>
-      <Value></Value>
-    </Variable>
-    <Variable>
-      <Name>SA_PASSWORD</Name>
-      <Value></Value>
-    </Variable>
-    <Variable>
-      <Name>MSSQL_PID</Name>
-      <Value>Developer</Value>
-    </Variable>
     <Variable>
       <Name>UMASK</Name>
       <Value>000</Value>
@@ -61,21 +39,6 @@
     </Variable>
   </Environment>
   <Data>
-    <Volume>
-      <HostDir>/mnt/cache/appdata/config/data</HostDir>
-      <ContainerDir>/var/opt/mssql/data</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-    <Volume>
-      <HostDir>/mnt/cache/appdata/config/log</HostDir>
-      <ContainerDir>/var/opt/mssql/log</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-    <Volume>
-      <HostDir>/mnt/cache/appdata/config/secrets</HostDir>
-      <ContainerDir>/var/opt/mssql/secrets</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
   </Data>
   <WebUI></WebUI>
   <Icon>https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/1200px-Microsoft_logo.svg.png</Icon>
@@ -89,7 +52,7 @@
       Description=""
       Mask="false"
       Display="always"
-      Required="false">Discovery Port</Config>
+      Required="false"></Config>
   <Config
       Type="Port"
       Name="SQL Port"
@@ -98,7 +61,7 @@
       Description=""
       Mask="false"
       Display="always"
-      Required="true">SQL Port</Config>
+      Required="true">1433</Config>
 
   <Config
       Type="Variable"
@@ -108,7 +71,7 @@
       Description="Set to 'Y' to confirm your acceptance of the End-User Licensing Agreement. See 'License' section here https://hub.docker.com/_/microsoft-mssql-server for details."
       Mask="false"
       Display="always"
-      Required="true">Accept EULA</Config>
+      Required="true"></Config>
   <Config
       Type="Variable"
       Name="SA Password"
@@ -117,7 +80,7 @@
       Description="Set a password for the sysadmin account, must meet password strength rules to work: This password needs to include at least 8 characters of at least three of these four categories: uppercase letters, lowercase letters, numbers and non-alphanumeric symbols. See 'Environment Variables' section here https://hub.docker.com/_/microsoft-mssql-server for details."
       Mask="true"
       Display="always"
-      Required="true">SA Password</Config>
+      Required="true"></Config>
   <Config
       Type="Variable"
       Name="Product Version ID"
@@ -126,7 +89,7 @@
       Description="'the Product ID (PID) or Edition that the container will run with' - allowed values: Developer/Express/Standard/Enterprise/EnterpriseCore. See 'Environment Variables' section here https://hub.docker.com/_/microsoft-mssql-server for details."
       Mask="false"
       Display="always"
-      Required="true">Product Version ID</Config>
+      Required="true">Developer</Config>
 
   <Config
       Type="Path"
@@ -137,7 +100,7 @@
       Description=""
       Mask="false"
       Display="always"
-      Required="true">Product Version ID</Config>
+      Required="true"></Config>
   <Config
       Type="Path"
       Mode="rw"
@@ -147,7 +110,7 @@
       Description=""
       Mask="false"
       Display="always"
-      Required="true">Product Version ID</Config>
+      Required="true"></Config>
   <Config
       Type="Path"
       Mode="rw"
@@ -157,5 +120,5 @@
       Description=""
       Mask="false"
       Display="always"
-      Required="true">Product Version ID</Config>
+      Required="true"></Config>
 </Containers>
