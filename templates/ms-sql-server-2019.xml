@@ -99,6 +99,24 @@
       Mask="false"
       Display="always"
       Required="false">false</Config>
+  <Config
+      Type="Variable"
+      Name="Language ID (LCID)"
+      Target="MSSQL_LCID"
+      Default="false"
+      Description="Sets the language ID to use for SQL Server. For example 1036 is French. See https://docs.microsoft.com/en-us/sql/linux/sql-server-linux-configure-environment-variables?view=sql-server-ver15&amp;viewFallbackFrom=sql-server-2019."
+      Mask="false"
+      Display="advanced"
+      Required="false"></Config>
+  <Config
+      Type="Variable"
+      Name="Default Collation"
+      Target="MSSQL_COLLATION"
+      Default="false"
+      Description="Sets the default collation for SQL Server. This overrides the default mapping of language id (LCID) to collation. See https://docs.microsoft.com/en-us/sql/linux/sql-server-linux-configure-environment-variables?view=sql-server-ver15&amp;viewFallbackFrom=sql-server-2019."
+      Mask="false"
+      Display="advanced"
+      Required="false"></Config>
   
   <Config
       Type="Path"
